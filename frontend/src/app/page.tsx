@@ -47,8 +47,8 @@ export default function Page() {
                   <AnimatedGradientText>
                     <div
                       className={cn(
-                        `absolute inset-0 block size-full animate-gradient bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:var(--bg-size)_100%] [border-radius:inherit] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]`,
-                        `p-px ![mask-composite:subtract]`,
+                        `absolute inset-0 block size-full animate-gradient bg-linear-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-size-[var(--bg-size)_100%] rounded-[inherit] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]`,
+                        `p-px mask-subtract!`,
                       )}
                     />
                     ❤️
@@ -56,7 +56,7 @@ export default function Page() {
                     <Separator className="mx-2 h-4" orientation="vertical" />
                     <span
                       className={cn(
-                        `animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+                        `animate-gradient bg-linear-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-size-[var(--bg-size)_100%] bg-clip-text text-transparent`,
                         `inline`,
                       )}
                     >

@@ -120,7 +120,7 @@ export default function ScriptAccordion({
                       query: { id: script.slug, category: category.name },
                     }}
                     prefetch={false}
-                    className={`flex cursor-pointer items-center justify-between gap-1 px-1 py-1 text-muted-foreground hover:rounded-lg hover:bg-accent/60 hover:dark:bg-accent/20 ${selectedScript === script.slug
+                    className={`flex cursor-pointer items-center justify-between gap-1 px-1 py-1 text-muted-foreground hover:rounded-lg hover:bg-accent/60 dark:hover:bg-accent/20 ${selectedScript === script.slug
                       ? "rounded-lg bg-accent font-semibold dark:bg-accent/30 dark:text-white"
                       : ""
                     }`}

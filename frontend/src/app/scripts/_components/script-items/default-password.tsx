@@ -16,7 +16,7 @@ export default function DefaultPassword({ item }: { item: Script }) {
   };
 
   return (
-    <div className="mt-4 rounded-lg border shadow-sm">
+    <div className="mt-4 rounded-lg border shadow-xs">
       <div className="flex gap-3 px-4 py-2 bg-accent/25">
         <h2 className="text-lg font-semibold">Default Login Credentials</h2>
       </div>

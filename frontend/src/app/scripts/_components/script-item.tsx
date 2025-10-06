@@ -35,10 +35,10 @@ function ScriptHeader({ item }: { item: Script }) {
 
   return (
     <div className="flex flex-col lg:flex-row gap-6 w-full">
-      <div className="flex flex-col md:flex-row gap-6 flex-grow">
-        <div className="flex-shrink-0">
+      <div className="flex flex-col md:flex-row gap-6 grow">
+        <div className="shrink-0">
           <Image
-            className="h-32 w-32 rounded-xl bg-gradient-to-br from-accent/40 to-accent/60 object-contain p-3 shadow-lg transition-transform hover:scale-105"
+            className="h-32 w-32 rounded-xl bg-linear-to-br from-accent/40 to-accent/60 object-contain p-3 shadow-lg transition-transform hover:scale-105"
             src={item.logo || `/${basePath}/logo.png`}
             width={400}
             onError={e => ((e.currentTarget as HTMLImageElement).src = `/${basePath}/logo.png`)}
@@ -47,7 +47,7 @@ function ScriptHeader({ item }: { item: Script }) {
             unoptimized
           />
         </div>
-        <div className="flex flex-col justify-between flex-grow space-y-4">
+        <div className="flex flex-col justify-between grow space-y-4">
           <div className="space-y-2">
             <div className="flex items-start justify-between">
               <div>
@@ -140,7 +140,7 @@ export function ScriptItem({ item, setSelectedScript }: ScriptItemProps) {
           </button>
         </div>
 
-        <div className="rounded-xl border border-border bg-accent/30 backdrop-blur-sm shadow-sm">
+        <div className="rounded-xl border border-border bg-accent/30 backdrop-blur-xs shadow-xs">
           <div className="p-6 space-y-6">
             <Suspense fallback={<div className="animate-pulse h-32 bg-accent/20 rounded-xl" />}>
               <ScriptHeader item={item} />
@@ -149,7 +149,7 @@ export function ScriptItem({ item, setSelectedScript }: ScriptItemProps) {
             <Description item={item} />
             <Alerts item={item} />
 
-            <div className="mt-4 rounded-lg border shadow-sm">
+            <div className="mt-4 rounded-lg border shadow-xs">
               <div className="flex gap-3 px-4 py-2 bg-accent/25">
                 <h2 className="text-lg font-semibold">
                   How to

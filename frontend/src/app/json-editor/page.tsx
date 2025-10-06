@@ -315,7 +315,7 @@ export default function JSONGenerator() {
             </Button>
           </div>
 
-          <pre className="mt-4 p-4 bg-secondary rounded shadow overflow-x-scroll">
+          <pre className="mt-4 p-4 bg-secondary rounded shadow-sm overflow-x-scroll">
             {JSON.stringify(script, null, 2)}
           </pre>
         </div>
